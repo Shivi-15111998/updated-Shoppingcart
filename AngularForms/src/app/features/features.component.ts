@@ -9,6 +9,7 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 export class FeaturesComponent {
    input=""
    result=''
+   dynamicval=""
     
  // @ViewChild('myDiv') myDiv: ElementRef | any;
 
