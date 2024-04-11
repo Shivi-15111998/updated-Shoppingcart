@@ -1,0 +1,35 @@
+<p>list works!</p>
+
+<div *ngFor ="let items of array" > 
+    {{items}}
+
+</div>
+<div>
+    <table border="1">
+    
+        <tr>
+          <th>Class</th>
+          <th> Name</th>
+        </tr>
+        <ng-container *ngFor="let items of newarray ;let index = index">
+        <tr>
+          <td *ngIf="index === 0" rowspan="2">{{items.class}}</td>
+          
+          <td>{{items.name}}</td>
+        </tr>
+        </ng-container>
+        
+  </table>
+
+
+
+<button type="button" (click)="name()">clickme</button>
+<h1>hbe</h1>
+<div *ngFor="let i of newarray">
+  
+  {{i.class}}
+{{i.name}}
+  
+</div>
+
+

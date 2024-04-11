@@ -1,0 +1,12 @@
+.container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.flex{
+    justify-content: center;
+    display: flex;
+    column-gap:3px;   
+}
+

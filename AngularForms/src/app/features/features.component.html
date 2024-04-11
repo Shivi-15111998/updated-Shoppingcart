@@ -1,0 +1,41 @@
+
+<div class=" row container">
+<div class="flex"><h1>Welcome to web calculator</h1></div>
+
+<div class="flex" >
+   <div type="text" class="col-sm-2 form-control text-lg-right">{{input}}</div> 
+</div>
+<div class=" flex">
+    <button class="btn btn-outline-primary" id="1" (click)=display(1) value="1">1</button>
+    <button class="btn btn-outline-primary"id="2"  (click)=display(2) value="2">2</button>
+    <button class="btn btn-outline-primary"id="3"  (click)=display(3) value="3">3</button>
+    <button class="btn btn-outline-primary"id="plus" (click)="operator('+')" value="+">+</button>
+</div>
+<div class="flex">
+    <button class="btn btn-outline-primary" id="4"  (click)=display(4) value="4">4</button>
+    <button class="btn btn-outline-primary" id="5"  (click)=display(5) value="5">5</button>
+    <button class="btn btn-outline-primary"id="6"  (click)=display(6) value="6">6</button>
+    <button class="btn btn-outline-primary"id="sub" (click)="operator('-')"value="-">-</button>
+</div>
+<div class="flex">
+    <button class="btn btn-outline-primary" id="7"  (click)=display(7) value="7">7</button>
+    <button class="btn btn-outline-primary"  id="8"   (click)=display(8) value="8">8</button>
+    <button class="btn btn-outline-primary" id="9"  (click)=display(9) value="9">9</button>
+    <button class="btn btn-outline-primary" id="mult"  (click)="operator('*')"  value="*">*</button>
+</div>
+<div class="flex">
+    <button class="btn btn-outline-primary" id="0"  (click)=display(0) value="0">0</button>
+    <button class="btn btn-outline-primary" id="result"  (click) ="getresult()" value="">result</button>
+     <button class="btn btn-outline-primary" id="perc"  (click)="operator('%')" value="%">%</button>
+    <button class="btn btn-outline-primary" id="div"  (click)="operator('/')" value="/">/</button>
+   </div>
+
+   <div class="flex">
+    <button class="btn btn-outline-primary" id="0"  (click)= 'clear()'
+     value="clear">clear</button>
+    <button class="btn btn-outline-primary" id="result" (click)= "allclear()"value="=">reset</button>
+   
+   </div>
+
+
+</div>

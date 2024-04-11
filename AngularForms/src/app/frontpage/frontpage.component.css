@@ -1,0 +1,64 @@
+.navigation-bar {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+  column-gap: 10px;
+  background-color: yellow;
+}
+.list {
+  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+li {
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+.nextnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 400px;
+  font-size: larger;
+  list-style: none;
+}
+.navbtn:hover {
+  background-color: blue;
+}
+.nextnav li a:hover {
+  color: white;
+}
+
+.logo {
+  width: 300px;
+}
+.arousel-indicators li {
+  color: aliceblue;
+}
+img {
+  width: 100%;
+}
+
+#togglebutton{
+  display: none;
+  
+}
+@media only screen and (max-width: 600px){
+
+
+.containes{
+  display:none
+}
+#togglebutton{
+  display: block;
+  
+  
+}
+}
